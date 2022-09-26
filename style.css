@@ -411,10 +411,10 @@ section {
   }
   .project-card {
     min-height: 7em;
-    width: 85%;
+    width: 16rem;
   }
   .card {
-    width: 80%;
+    width: 22rem;
   }
 
   .main h2 {
