@@ -289,7 +289,7 @@ section {
   }
 }
 
-@media (max-width: 641px) {
+@media (max-width: 59em) {
   body {
     font-size: 12px;
   }
@@ -303,6 +303,10 @@ section {
   }
   .menu-icon {
     display: block;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
   }
   .links {
     position: relative;
@@ -376,7 +380,7 @@ section {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 38em) {
   body {
     font-size: 10px;
   }
