@@ -18,6 +18,13 @@ header {
   align-items: center;
   padding: 10px 200px;
 }
+.menu-icon {
+  height: 2rem;
+  width: 2rem;
+  display: none;
+  color: #3a6cf4;
+}
+
 .logo {
   text-decoration: none;
   color: #3a6cf4;
@@ -25,16 +32,31 @@ header {
   font-weight: 700;
   font-size: 1.8rem;
 }
+
+.navigation ul li {
+  list-style: none;
+}
+.navigation ul {
+  display: flex;
+}
 .navigation a {
   color: #3a6cf4;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
-  padding-left: 30px;
+  margin-left: 30px;
 }
 .navigation a:hover {
   color: #601cfc;
 }
+.icon-mobile-nav {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  color: #601cfc;
+  background-color: #eeeaf9;
+}
+
 section {
   padding: 100px 200px;
 }
@@ -279,6 +301,52 @@ section {
   .main-content h3 {
     font-size: 1.4em;
   }
+  .menu-icon {
+    display: block;
+  }
+  .links {
+    position: relative;
+  }
+  .container .navigation ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(162, 162, 156) transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+  }
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 240);
+    position: absolute;
+    right: 6px;
+    min-width: 200px;
+    top: 44px;
+    z-index: 1;
+  }
+
+  .navigation ul {
+    display: none;
+  }
+  .navigation ul li a {
+    display: block;
+    padding: 1.2rem;
+    margin: 0;
+    transition: 0.4s;
+    font-weight: normal;
+  }
+  .navigation ul li a:hover {
+    padding-left: 2rem;
+  }
+  .navigation ul li:not(:last-child) {
+    border-bottom: solid #ddd 1px;
+  }
+  .navigation .links:hover ul {
+    display: block;
+  }
   .ex-img {
     width: 25px;
     height: 30px;
@@ -287,6 +355,9 @@ section {
   .project-card {
     min-height: 12em;
     width: 20em;
+  }
+  .info {
+    width: 100%;
   }
   .card {
     width: 19.25em;
@@ -309,6 +380,26 @@ section {
   body {
     font-size: 10px;
   }
+  .logo {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .icon-mobile-nav {
+    display: block;
+  }
+
+  .container .navigation ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(162, 162, 156) transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+  }
+  .info {
+    width: 100%;
+  }
   .ex-img {
     width: 15px;
     height: 20px;
@@ -316,11 +407,12 @@ section {
   }
   .project-card {
     min-height: 7em;
-    width: 13em;
+    width: 85%;
   }
   .card {
-    width: 12.25em;
+    width: 80%;
   }
+
   .main h2 {
     font-size: 1.3em;
     font-weight: 500;
@@ -337,10 +429,14 @@ section {
     font-size: 1.3em;
   }
   .info h3 {
-    font-size: 1.3em;
+    font-size: 1.6em;
     font-weight: 500;
   }
   .contact .info p {
-    font-size: 0.6em;
+    font-size: 0.9em;
+  }
+  .footer-title {
+    font-size: 0.6rem;
+    font-weight: 500;
   }
 }

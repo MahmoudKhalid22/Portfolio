@@ -9,17 +9,38 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+     <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
     <title>Mahmoud Khalid</title>
   </head>
   <body>
     <header class="container">
       <a href="#" class="logo">Mahmoud Khalid</a>
+
       <nav class="navigation">
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <div class="links">
+          <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+          <ul class="nav-links">
+          <li><a href="#services" alt="main-nav-link">Services</a></li>
+          <li><a href="#projects" alt="main-nav-link">Projects</a></li>
+          <li><a href="#contact" alt="main-nav-link">Contact</a></li>
+          </ul>
+        </div>
       </nav>
-    </header>
+      </div>  
+      </header>
     <section class="main">
       <div class="hero-content">
         <h2>Hello, I'm Mahmoud<br><span>FullStack Developer</span></h2>
@@ -160,6 +181,18 @@
             <strong class="project-title">
               <span>Mapty</span>
               <a class="more-details" href="https://mapty-msamra.netlify.app/" target="_blank">More details</a>
+            </strong>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+              <img src="img/forkify.png" >
+          </div>
+          <div class="project-info">
+            <p class="project-category">Forkify</p>
+            <strong class="project-title">
+              <span>Forkify</span>
+              <a class="more-details" href="https://msamra-forkify.netlify.app/" target="_blank">More details</a>
             </strong>
           </div>
         </div>
