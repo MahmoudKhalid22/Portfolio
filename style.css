@@ -411,10 +411,10 @@ section {
   }
   .project-card {
     min-height: 7em;
-    width: 16rem;
+    width: 14rem;
   }
   .card {
-    width: 22rem;
+    width: 14rem;
   }
 
   .main h2 {
@@ -442,5 +442,14 @@ section {
   .footer-title {
     font-size: 0.6rem;
     font-weight: 500;
+  }
+}
+
+@media (max-width: 300px) {
+  .project-card {
+    width: 10rem;
+  }
+  .projects {
+    width: 100%;
   }
 }
