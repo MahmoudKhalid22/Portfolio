@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:wght@400;600;700&display=swap");
-
+/* *********************** */
+/* GENERAL RULES */
+/* *********************** */
+:root {
+  --main-color: #3a6cf4;
+}
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -7,6 +12,83 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.title {
+  position: relative;
+  border: 2px solid var(--main-color);
+  width: fit-content;
+  padding: 0.5rem;
+  color: var(--main-color);
+  margin: 0 auto 1.875rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  transition: 0.6s;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.title:hover {
+  color: white;
+  border: 2px solid white;
+  transition-delay: 0.3s;
+  z-index: 101;
+}
+.title:hover::before {
+  animation: left 0.6s linear forwards;
+  z-index: -1;
+}
+.title:hover::after {
+  animation: right 0.6s linear forwards;
+  z-index: -1;
+}
+/* ********************** */
+/* CREATING ANIMATIONS */
+/* ********************** */
+@keyframes left {
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+    width: 50.5%;
+    height: 100%;
+    /* z-index: -1; */
+    border-radius: 0;
+  }
+}
+@keyframes right {
+  50% {
+    right: 0;
+  }
+  100% {
+    right: 0;
+    width: 50.5%;
+    height: 100%;
+    /* z-index: -1; */
+    border-radius: 0;
+  }
+}
+/* ********************** */
+/* HEADER */
+/* ********************** */
 
 header {
   background-color: #f0f0f0;
@@ -127,14 +209,7 @@ section {
 /* ****************** */
 /* SERVICE */
 /* ****************** */
-.title {
-  display: flex;
-  justify-content: center;
-  color: #3a6cf4;
-  font-size: 2.2rem;
-  font-weight: 800;
-  margin-bottom: 30px;
-}
+
 .ex-img {
   width: 50px;
   height: 53px;
