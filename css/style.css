@@ -4,6 +4,11 @@
 /* *********************** */
 :root {
   --main-color: #3a6cf4;
+  color: rgba(0, 0, 0, 0.626);
+}
+body {
+  /* background-color: black; */
+  transition: 0.3s;
 }
 * {
   font-family: "Poppins", sans-serif;
@@ -26,8 +31,8 @@
 .title::before {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: var(--main-color);
   left: -30px;
@@ -37,8 +42,8 @@
 .title::after {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: var(--main-color);
   right: -30px;
@@ -89,7 +94,6 @@
 /* ********************** */
 /* HEADER */
 /* ********************** */
-
 header {
   background-color: #f0f0f0;
   width: 100%;
@@ -100,16 +104,30 @@ header {
   align-items: center;
   padding: 10px 200px;
 }
+.navigation .links {
+  display: flex;
+  align-items: center;
+}
+.navigation .links i {
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--main-color);
+}
+.navigation .links i:last-of-type {
+  display: none;
+}
+
 .menu-icon {
   height: 2rem;
   width: 2rem;
   display: none;
-  color: #3a6cf4;
+  color: var(--main-color);
 }
 
 .logo {
   text-decoration: none;
-  color: #3a6cf4;
+  color: var(--main-color);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.8rem;
@@ -150,7 +168,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(img/laptop_keys_code_211625_300x240.jpg) no-repeat;
+  background: url(../img/laptop_keys_code_211625_300x240.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -209,10 +227,50 @@ section {
 /* ****************** */
 /* SERVICE */
 /* ****************** */
+.info .contIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.card .info i {
+  font-size: 4.3rem;
+  font-weight: bold;
+  margin-right: 1.25rem;
+  display: inline-block;
+}
+iconify-icon {
+  font-size: 4.3rem;
+  font-weight: bold;
+  margin-right: 1.25rem;
+  display: inline-block;
+  color: #764abc;
+}
+iconify-icon:last-of-type {
+  margin-right: 0;
+}
+.fa-react {
+  color: #61dafb;
+}
 
+.fa-html5 {
+  color: red;
+}
+.fa-css3-alt {
+  color: blue;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.fa-node-js {
+  color: #539e43;
+}
+.card .info i:nth-of-type(3) {
+  color: rgb(247, 223, 30);
+  margin-right: 0;
+}
 .ex-img {
-  width: 50px;
-  height: 53px;
+  width: 3.125rem;
+  height: 3.3125rem;
   margin: 1.4rem 1.2rem 0 1.2rem;
 }
 .node-img {
@@ -250,6 +308,10 @@ section {
   font-size: 1.2rem;
   font-weight: 700;
   margin: 10px;
+}
+.info p {
+  font-size: 0.75rem;
+  line-height: 1.5;
 }
 /* *************** */
 /* PROJECTS */
@@ -371,10 +433,21 @@ section {
     align-items: center;
   }
 }
-
+/* ***************************** */
+/* BELOW 944px TABLETS */
+/* ***************************** */
 @media (max-width: 59em) {
   body {
     font-size: 12px;
+  }
+  .navigation .links i {
+    margin-right: 1rem;
+  }
+  .card .info i {
+    font-size: 3.3rem;
+  }
+  iconify-icon {
+    font-size: 3.3rem;
   }
 
   .main-content h2 {
@@ -447,7 +520,7 @@ section {
     width: 100%;
   }
   .card {
-    width: 19.25em;
+    width: 60%;
   }
   .main h2 {
     font-size: 1.7em;
