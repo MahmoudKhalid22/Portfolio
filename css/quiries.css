@@ -166,7 +166,8 @@
     right: 3.25rem;
   }
   header .container .modeIcon i {
-    font-size: 0.7rem;
+    font-size: 1rem;
+    margin-right: 1.35rem;
   }
   .menu-icon {
     height: 1.57rem;
