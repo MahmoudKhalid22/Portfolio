@@ -243,25 +243,23 @@ header .container .modeIcon i:last-of-type {
   position: relative;
 }
 .services .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
-  gap: 1.875rem;
-  /* position: absolute; */
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
-  /* width: 70rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 0.25;
 }
 .services .container .card {
-  width: 80%;
+  /* width: 80%; */
   background-color: #fff;
   box-shadow: 5px 5px 5px 5px rgba(1 1 1 / 35%);
   border-radius: 12px;
   padding: 1.5625rem;
-  /* margin: 0.9375rem; */
   transition: 0.3s ease;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 20rem;
+  min-height: 20rem;
+  margin: 1rem;
 }
 
 .services .container .card:hover {
@@ -389,14 +387,14 @@ iconify-icon:last-of-type {
   padding-bottom: 6.25rem;
 }
 .contact .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
-  gap: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .contact .container .card {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  width: 29rem;
   background-color: #fff;
   box-shadow: 5px 5px 5px 5px rgba(1 1 1 / 35%);
   border-radius: 12px;
@@ -404,9 +402,16 @@ iconify-icon:last-of-type {
   /* margin: 0.9375rem; */
   transition: 0.7s ease;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
+}
+.contact .container .card:first-of-type {
+  margin-right: 5rem;
+  margin-left: 0;
+  /* justify-content: end; */
+  /* flex: 0.4; */
+}
+.contact .container .card:last-of-type {
+  /* flex: 0.4; */
 }
 .contact .container .card:hover {
   transform: scale(1.1);
