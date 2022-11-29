@@ -185,7 +185,7 @@
   }
   .services .container .card,
   .contact .container .card {
-    width: 66%;
+    /* width: 66%; */
   }
   .project-title {
     font-size: 0.54rem;
@@ -218,6 +218,11 @@
   }
   .contact .container .card {
     padding-top: 0;
+  }
+  .contact .info p {
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    /* max-width: 50%; */
   }
 }
 /* ********************  */

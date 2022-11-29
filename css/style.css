@@ -421,7 +421,7 @@ iconify-icon:last-of-type {
 }
 
 .contact .info p {
-  font-size: 1em;
+  font-size: 1rem;
 }
 /* ******************* */
 /* FOOTER */
@@ -432,6 +432,7 @@ iconify-icon:last-of-type {
   padding: 2em;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-title {
