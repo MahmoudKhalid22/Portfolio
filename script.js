@@ -7,6 +7,11 @@ const cssIcon = document.querySelector(".fa-css3-alt");
 const project = document.querySelector(".projects");
 const phone = document.querySelectorAll(".info> h3");
 
+const menuIcon = document.querySelector(".menu");
+const menuItem = document.querySelector(".navigation>ul");
+const close = document.querySelector(".close");
+
+// Dark Mode
 dark.addEventListener("click", function () {
   document.body.style.backgroundColor = "rgba(0, 0, 0, 0.86)";
   light.style.display = "block";
@@ -24,7 +29,7 @@ dark.addEventListener("click", function () {
   cssIcon.style.color = "white";
   project.style.backgroundColor = "#000016";
 });
-
+// Light Mode
 light.addEventListener("click", function () {
   document.body.style.backgroundColor = "rgba(255, 255, 255, 0.86)";
   light.style.display = "none";
@@ -40,4 +45,16 @@ light.addEventListener("click", function () {
   cssIcon.style.color = "blue";
   header.style.backgroundColor = "#f0f0f0";
   project.style.backgroundColor = "#ececec";
+});
+
+// menu icons
+menuIcon.addEventListener("click", () => {
+  close.style.display = "block";
+  menuItem.style.display = "block";
+  menuIcon.style.display = "none";
+});
+close.addEventListener("click", () => {
+  menuIcon.style.display = "block";
+  menuItem.style.display = "none";
+  close.style.display = "none";
 });

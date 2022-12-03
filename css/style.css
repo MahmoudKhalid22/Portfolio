@@ -121,11 +121,11 @@ header .container .modeIcon i:last-of-type {
   display: none;
 }
 
-.menu-icon {
-  height: 2rem;
-  width: 2rem;
+.navigation i {
+  font-size: 1rem;
   display: none;
   color: var(--main-color);
+  transition: 0.3s ease;
 }
 
 .logo {
@@ -164,15 +164,12 @@ header .container .modeIcon i:last-of-type {
 /* MAIN */
 /* ****************** */
 .main {
-  /* padding-top: 6.25rem; */
   padding-bottom: 6.25rem;
 }
 .main .container {
   width: 100%;
   min-height: 100vh;
-  /* display: flex;
-  flex-direction: column;
-  transform: translateY(50%); */
+
   background: url(../img/laptop_keys_code_211625_300x240.jpg) no-repeat;
   background-size: cover;
   background-position: center;
