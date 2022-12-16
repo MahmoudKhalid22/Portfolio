@@ -274,6 +274,10 @@
   .projects .buttonProjects:last-child {
     right: 85%;
   }
+  header .container .modeIcon i {
+    position: relative;
+    left: 11.5rem;
+  }
 }
 /* ********************  */
 /* for iphones */

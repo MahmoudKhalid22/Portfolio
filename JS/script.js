@@ -1,5 +1,5 @@
 // //import pr from "./app";
-import { pr } from "/JS/appData.js";
+import { pr } from "./appData.js";
 
 const dark = document.querySelector(".fa-moon");
 const light = document.querySelector(".fa-lightbulb");
