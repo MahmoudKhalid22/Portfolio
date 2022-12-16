@@ -124,8 +124,12 @@
   .info {
     width: 100%;
   }
-  .project-card {
+  .projects .container .project-card {
     min-height: 17rem;
+  }
+  .projects .projectMenuItem .project-card {
+    height: 19rem;
+    width: 20rem;
   }
   .info h3 {
     font-size: 1.6em;
@@ -137,6 +141,12 @@
   .footer-title {
     font-size: 0.9rem;
     font-weight: 500;
+  }
+  .projects .buttonProjects:first-child {
+    left: 75%;
+  }
+  .projects .buttonProjects:last-child {
+    right: 75%;
   }
 }
 
@@ -162,6 +172,12 @@
   .contact .container .card:first-of-type {
     margin: 0 auto 5rem;
   }
+  .projects .buttonProjects:first-child {
+    left: 82%;
+  }
+  .projects .buttonProjects:last-child {
+    right: 82%;
+  }
 }
 /* ***********************/
 /* BELOW 544px (mobiles) */
@@ -179,9 +195,10 @@
   }
   header .container .modeIcon {
     right: 3.25rem;
+    margin-right: 12rem;
   }
   header .container .modeIcon i {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-right: 1.35rem;
   }
 
@@ -239,6 +256,23 @@
     letter-spacing: 2px;
     font-size: 0.75rem;
     /* max-width: 50%; */
+  }
+  header .container {
+    height: 2.75rem;
+  }
+  .navigation .menu,
+  .navigation .close {
+    font-size: 1.3rem;
+  }
+  .projects .projectMenuItem .project-card {
+    width: 12rem;
+    height: 12rem;
+  }
+  .projects .buttonProjects:first-child {
+    left: 85%;
+  }
+  .projects .buttonProjects:last-child {
+    right: 85%;
   }
 }
 /* ********************  */

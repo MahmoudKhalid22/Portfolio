@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/quiries.css">
     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-     <script
+     <script   
       defer
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
@@ -121,17 +121,47 @@
     </section>
     <section class="projects" id="projects">
         <h2 class="title">Projects</h2>
-      <div class="container">
-        <!-- 01 -->
-        <div class="project-card">
+        <iconify-icon title="display in menu icon" icon="gg:menu-grid-r" class="display" id="display"></iconify-icon>
+
+      <div class="projectMenu">
+          <div class="project-card">
           <div class="project-image">
-            <img src="img/landing.jpg" alt="photo of project" >
+            <img src="img/landing.jpg" class= "pr-img"alt="photo of project" >
           </div>
           <div class="project-info">
             <p class="project-category">Trial Protofolio</p>
             <strong class="project-title">
               <span>Html,css</span>
-              <a class="more-details" href="https://tempone-mahmoud.netlify.app/" target="_blank">More details</a>
+              <a class="more-details-demo" href="https://tempone-mahmoud.netlify.app/" target="_blank">More details</a>
+              <a class="more-details" href="https://github.com/MahmoudKhalid22/temp" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            </strong>
+          </div>
+        </div>
+         <div class="projectIcons">
+      <button class="buttonProjects rigthIcon">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <button class="buttonProjects">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      </div>
+      </div>  
+     
+      
+      <div class="container">
+        <!-- 00 -->
+      
+        <!-- 01 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img/landing.jpg" class= "pr-img"alt="photo of project" >
+          </div>
+          <div class="project-info">
+            <p class="project-category">Trial Protofolio</p>
+            <strong class="project-title">
+              <span>Html,css</span>
+              <a class="more-details-demo" href="https://tempone-mahmoud.netlify.app/" target="_blank">More details</a>
               <a class="more-details" href="https://github.com/MahmoudKhalid22/temp" target="_blank"><i class="fa-brands fa-github"></i></a>
 
             </strong>
@@ -179,7 +209,7 @@
             </strong>
           </div>
         </div>
-        <!-- 04 js -->
+        <!-- 05 js -->
         <div class="project-card">
           <div class="project-image">
             <img src="img/pig-game.png" alt="photo of project">
@@ -194,7 +224,7 @@
             </strong>
           </div>
         </div>
-        <!-- 05 js -->
+        <!-- 06 js -->
         <div class="project-card">
           <div class="project-image">
             <img src="img/bankist.png" alt="photo of project">
@@ -208,7 +238,7 @@
             </strong>
           </div>
         </div>
-        <!-- 06 js -->
+        <!-- 07 js -->
         <div class="project-card">
           <div class="project-image">
               <img src="img/bankist-site.png" alt="photo of project">
@@ -265,20 +295,6 @@
             </strong>
           </div>
         </div> 
-        <!-- 10  react  2 -->
-        <div class="project-card">
-          <div class="project-image">
-              <img src="img/sec-19.png" alt="photo of project">
-          </div>
-          <div class="project-info">
-            <p class="project-category">Redux cart</p>
-            <strong class="project-title">
-              <span>Reactjs</span>
-              <a class="more-details" href="https://sec-19-mkhalid.netlify.app/" target="_blank">More details</a>
-              <a class="more-details" href="https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/blob/main/02-Udemy/-03-Reactjs-Maximilian/Projects/redux-cart" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </strong>
-          </div>
-        </div>
         <!-- 11 react 2 -->
         <div class="project-card">
           <div class="project-image">
@@ -295,7 +311,7 @@
         </div>
        
         <!-- 12 node 1 -->
-        <div class="project-card">
+        <!-- <div class="project-card">
           <div class="project-image">
               <img src="img/weather-app.png"  alt="photo of project">
           </div>
@@ -307,7 +323,7 @@
               <a class="more-details" href="https://github.com/MahmoudKhalid22/node3-weather-website" target="_blank"><i class="fa-brands fa-github"></i></a>
             </strong>
           </div>
-        </div>
+        </div> -->
         <!-- 13  sst-->
         <div class="project-card">
           <div class="project-image">
@@ -362,6 +378,7 @@
         </div>
     </footer>
      
-      <script src="script.js"></script>         
+      <script type="module" src="JS/script.js" ></script>         
+      <script type="module" src="JS/appData.js" ></script>
   </body>
 </html>
