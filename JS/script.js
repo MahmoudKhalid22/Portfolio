@@ -89,6 +89,9 @@ display.addEventListener("click", () => {
   projectMenu.classList.toggle("projectMenuItem");
   // console.log(projects.classList.contains("containerII"));
   // console.log(projects);
+  if (projectMenu.classList.contains("projectMenuItem")) {
+    showProject();
+  }
 });
 
 rightProject.addEventListener("click", () => {
