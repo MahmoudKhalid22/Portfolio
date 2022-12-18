@@ -116,3 +116,9 @@ const showProject = () => {
   projectDemo.href = pr[projectIndex].demo;
   projectGitHub.href = pr[projectIndex].github;
 };
+
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", () => {
+  preloader.classList.add("hide-preloader");
+});
