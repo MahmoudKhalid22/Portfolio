@@ -16,7 +16,40 @@
     margin-bottom: 5rem;
   }
 }
-
+/* *********************** */
+/* below 1060px */
+/* *********************** */
+@media (max-width: 66.25em) {
+  .experience .container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .experience .container .skills-holder .skills-holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, fr));
+  }
+  .experience .container .skills-holder .skills {
+    justify-content: center;
+  }
+  .experience .container .skills-holder .skills > div {
+    max-width: 20rem;
+    height: 14rem;
+    justify-content: center;
+  }
+  .experience .container .tools-holder h2 {
+    padding-top: 3.125rem;
+  }
+}
+/* *********************** */
+/* ABOVE 944px */
+/* *********************** */
+@media (min-width: 59em) {
+  header .container .nav-toggle i:last-child,
+  header .container .nav-toggle i:nth-child(3),
+  header .container .nav-toggle i:nth-child(2) {
+    display: none;
+  }
+}
 /* ***********************/
 /* BELOW 944px (tablets) */
 /* ********************* */
@@ -28,67 +61,84 @@
     font-size: 1.5rem;
     font-weight: 600;
   }
-  .navigation {
+
+  header {
     position: relative;
   }
-  .modeIcon {
-    right: 5rem;
+  .nav-toggle {
+    top: 15px;
+    right: 4rem;
+    margin-right: 0;
+  }
+  header .container {
+    display: block;
+  }
+  header .container .nav-header .nav-toggle .menu {
+    display: flex;
+  }
+  header .container .nav-header .nav-toggle .menui {
+    display: none;
+  }
+  header .container .nav-header .nav-toggle .closei {
+    display: flex;
   }
 
-  .container .navigation ul::before {
-    content: "";
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent transparent rgb(162, 162, 156) transparent;
-    position: absolute;
-    right: 5px;
-    top: -20px;
+  header .nav-center .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(240, 240, 240);
-    position: absolute;
-    right: 6px;
-    min-width: 200px;
-    top: 42px;
-    z-index: 1;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.4s;
   }
-  .navigation ul {
-    display: none;
+  .nav-links-icon {
+    height: 18rem;
+    text-align: right;
+    background: #f0f0f0;
+    left: 0;
+    transition: 0.4s;
   }
-  .navigation ul li a {
+
+  .nav-links li a {
     display: block;
-    padding: 1.2rem;
+    padding: 1.2rem 0;
     margin: 0;
     transition: 0.4s;
     font-weight: normal;
-  }
-  .navigation .menu {
-    display: block;
+    text-align: left;
+    transition: 0.3s;
   }
 
-  .navigation ul li a:hover {
-    padding-left: 2rem;
+  .nav-links li a:hover {
+    padding-left: 1rem;
   }
-  .navigation ul li:not(:last-child) {
-    border-bottom: solid #ddd 1px;
+
+  .nav-links li:not(:last-child) {
+    border-bottom: solid rgb(216, 203, 203) 1px;
   }
-  .navigation:hover ul {
-    /* display: block; */
+
+  .about .container {
+    flex-direction: column;
+  }
+  .about .container .holder {
+    flex: 1.5;
+    min-width: 25rem;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 3rem;
+    width: 100%;
   }
   .title {
     font-size: 1.56rem;
   }
-  header i {
-    margin-right: 0.75rem;
-  }
   .main-content h2 {
     font-size: 0.8em;
   }
-
   .main-content h3 {
     font-size: 1.4em;
   }
@@ -105,9 +155,8 @@
     font-weight: 500;
   }
   .main-btn {
-    font-size: 1.3em;
+    font-size: 1rem;
   }
-
   .card .info i {
     font-size: 3.3rem;
   }
@@ -148,6 +197,36 @@
   .projects .buttonProjects:last-child {
     right: 75%;
   }
+  .contact .container .form {
+    padding: 2rem;
+    width: auto;
+    border-radius: 0;
+  }
+  .contact .container .form .myInfo {
+    /* display: none; */
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 100%;
+    margin-bottom: 1rem;
+    right: 0;
+    height: auto;
+    top: -12.61rem;
+    display: flex;
+    justify-content: center;
+  }
+  .contact .container .form .myInfo > div {
+    left: 30%;
+    position: relative;
+  }
+  .contact .container .form .myInfo > div > p {
+    text-align: center;
+    /* display: block; */
+    /* margin: 1rem auto; */
+  }
+  .contact .caption {
+    margin-bottom: 23rem;
+  }
 }
 
 /* ***********************/
@@ -157,9 +236,13 @@
   .container {
     width: 33.875rem;
   }
+  .nav-links-icon {
+    /* height: 11rem; */
+  }
   .title {
     font-size: 1.2rem;
   }
+
   .main h2,
   .main h3,
   .main-btn {
@@ -167,16 +250,45 @@
   }
 
   .main h2 span {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+  }
+  .about .container .holder p {
+    font-size: 1.2rem;
   }
   .contact .container .card:first-of-type {
     margin: 0 auto 5rem;
+  }
+  .buttons {
+    flex-direction: column;
+    justify-content: start;
   }
   .projects .buttonProjects:first-child {
     left: 82%;
   }
   .projects .buttonProjects:last-child {
     right: 82%;
+  }
+  .main-btn {
+    min-width: 13rem;
+  }
+  .services .container h2 {
+    font-size: 1.75rem;
+  }
+  .services .container h3 {
+    font-size: 1.5rem;
+  }
+  .services .container ul li {
+    font-size: 1.2rem;
+  }
+  .footer .container {
+    width: 100%;
+  }
+  .display {
+    margin-bottom: 2rem;
+  }
+  .contact .container .form .myInfo > div {
+    left: 14%;
+    top: 0.75rem;
   }
 }
 /* ***********************/
@@ -192,42 +304,78 @@
   }
   .logo {
     font-size: 0.9rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
-  header .container .modeIcon {
-    right: 3.25rem;
-    margin-right: 12rem;
+  header .container .nav-toggle i {
+    width: 0;
   }
-  header .container .modeIcon i {
-    font-size: 1.3rem;
-    margin-right: 1.35rem;
+  .nav-links-icon {
+    height: 16.5rem;
+  }
+  .nav-links li a:hover {
+    padding-left: 3rem;
+  }
+  .main h2 span {
+    font-size: 1.7rem;
+  }
+  .nav-toggle {
+    top: 12px;
   }
 
-  .info h3 {
-    font-size: 0.9rem;
+  .nav-links {
+    top: 44px;
   }
-  .info p {
-    font-size: 0.6rem;
+
+  .about .container .holder {
+    min-width: 13rem;
   }
-  .info .contIcon i,
-  iconify-icon {
-    font-size: 1.8rem;
+  .about .container .holder p {
+    font-size: 1.25rem;
   }
-  .services .container .card,
-  .contact .container .card {
+  .about .container .image-holder img {
     width: 100%;
-    margin-bottom: 0.75rem;
   }
-  .services .container .card {
-    min-height: 12rem;
+  .main-btn {
+    font-size: 0.65rem;
+    min-width: 9rem;
+  }
+  .about {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+  .about .title,
+  .services .title,
+  .experience .title,
+  .projects .title {
+    margin-bottom: 3rem;
+  }
+
+  .experience .container .skills > div {
+    min-width: 15rem;
+  }
+  .experience .container .skills-holder .skills > div {
+    max-width: 15rem;
+  }
+  .experience .container .languages-holder h2,
+  .experience .container .skills-holder h2,
+  .experience .container .tools-holder h2 {
+    font-size: 1rem;
+  }
+  .experience .container .languages {
+    gap: 1rem;
   }
   .project-title {
     font-size: 0.54rem;
   }
   .projects .container .project-card {
-    /* width: 50%; */
     min-height: 6rem;
     margin-left: auto;
     margin-right: auto;
+  }
+  .projects .container .project-card {
+    max-width: 80%;
   }
   .footer-title,
   .social-icons {
@@ -236,14 +384,11 @@
   .contact .info p {
     font-size: 0.45rem;
   }
+  .contact .caption {
+    margin-bottom: 15rem;
+  }
 
-  .contact .container .card .icon i {
-    font-size: 1.2rem;
-  }
-  .nav-links {
-    top: 26px;
-  }
-  .navigation ul li a {
+  .nav-links li a {
     font-size: 0.71rem;
   }
   .footer .container {
@@ -260,8 +405,8 @@
   header .container {
     height: 2.75rem;
   }
-  .navigation .menu,
-  .navigation .close {
+  .nav-links .menu,
+  .nav-links .close {
     font-size: 1.3rem;
   }
   .projects .projectMenuItem .project-card {
@@ -274,9 +419,74 @@
   .projects .buttonProjects:last-child {
     right: 85%;
   }
-  header .container .modeIcon i {
+  /* ********************* */
+  .services .container {
+    text-align: center;
+  }
+  .services .container h2 {
+    font-size: 1.33rem;
+  }
+  .services .container h3 {
+    font-size: 1rem;
+  }
+
+  .services .container ul {
     position: relative;
-    left: 11.5rem;
+    left: 67%;
+    transform: translateX(-50%);
+  }
+  .services .container ul li {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .contact .container .form {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding: 1rem 0;
+  }
+  .contact .container .form .myInfo {
+    padding: 1rem;
+    top: -10.67rem;
+  }
+  .contact .container .form .myInfo > div {
+    left: 0;
+    font-size: 8px;
+    gap: 0.5rem;
+    /* padding: 0.5rem; */
+  }
+  .contact .container .form .myInfo > div > p {
+    text-align: 8px;
+  }
+  .contact .container form input:not(:last-child) {
+    width: 90%;
+    font-size: 0.85rem;
+    padding: 1rem 0.5rem;
+    border-radius: 0;
+  }
+  .contact .container form textarea {
+    width: 90%;
+    font-size: 0.85rem;
+    max-height: 12rem;
+    padding: 1rem 0.5rem;
+    border-radius: 0;
+  }
+
+  .nav-links {
+    position: absolute;
+    left: 0;
+  }
+  .nav-links li a {
+    padding-left: 2.3rem;
+  }
+  .footer-title,
+  .social-icons {
+    font-size: 0.5rem;
+  }
+  .footer .container {
+    padding: 1rem 0.5rem;
   }
 }
 /* ********************  */

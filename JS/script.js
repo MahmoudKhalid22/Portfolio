@@ -1,73 +1,34 @@
-// //import pr from "./app";
 import { pr } from "./appData.js";
 
-const dark = document.querySelector(".fa-moon");
-const light = document.querySelector(".fa-lightbulb");
 const card = document.querySelectorAll(".card");
 const p = document.querySelectorAll(".info > p");
 const header = document.querySelector("header .container");
 const cssIcon = document.querySelector(".fa-css3-alt");
 const project = document.querySelector(".projects");
-const phone = document.querySelectorAll(".info> h3");
-
 const menuIcon = document.querySelector(".menu");
-const menuItem = document.querySelector(".navigation>ul");
 const close = document.querySelector(".close");
-
+const menuItem = document.querySelector(".nav-links");
 const display = document.getElementById("display");
 const projects = document.querySelector(".projects .container");
+const contactP = document.querySelector(".contact p");
+const form = document.querySelector(".form");
+const smenu = document.querySelector(".nav-links-icon");
 
-// Dark Mode
-dark.addEventListener("click", () => {
-  document.body.style.backgroundColor = "rgba(0, 0, 0, 0.86)";
-  light.style.display = "block";
-  dark.style.display = "none";
-  card.forEach((item) => {
-    item.style.backgroundColor = "black";
-    item.style.boxShadow = "0 5px 5px rgba(1 1 1 / 15%)";
-    item.style.color = "white";
-  });
-  p.forEach((item) => {
-    item.style.color = "white";
-  });
-  phone.forEach((item) => {
-    item.style.color = "white";
-  });
-  header.style.backgroundColor = "rgb(36, 36, 36)";
-  cssIcon.style.color = "white";
-  project.style.backgroundColor = "#000016";
-});
-// light mode
-light.addEventListener("click", () => {
-  document.body.style.backgroundColor = "rgba(255, 255, 255, 0.86)";
-  light.style.display = "none";
-  dark.style.display = "block";
-  card.forEach((item) => {
-    item.style.backgroundColor = "white";
-    item.style.boxShadow = "5px 5px 5px 5px rgba(1 1 1 / 35%)";
-    item.style.color = "black";
-  });
-  p.forEach((item) => {
-    item.style.color = "black";
-  });
-  phone.forEach((item) => {
-    item.style.color = "black";
-  });
-  header.style.backgroundColor = "#f0f0f0";
-  cssIcon.style.color = "black";
-  project.style.backgroundColor = "#ececec";
+form.addEventListener("submit", () => {
+  alert(`Your messege has sent ! thank you 😁`);
 });
 
-// menu icons
 menuIcon.addEventListener("click", () => {
-  close.style.display = "block";
-  menuItem.style.display = "block";
-  menuIcon.style.display = "none";
+  // console.log(menuIcon.classList);
+  close.classList.add("closei");
+  menuIcon.classList.add("menui");
+  menuItem.classList.add("nav-links-icon");
 });
 close.addEventListener("click", () => {
-  menuIcon.style.display = "block";
-  menuItem.style.display = "none";
-  close.style.display = "none";
+  // console.log(menuIcon.classList);
+  close.classList.remove("closei");
+  menuIcon.classList.remove("menui");
+  menuItem.classList.remove("nav-links-icon");
 });
 
 // const projectCard = document.querySelector(".project-card");
