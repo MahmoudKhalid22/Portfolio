@@ -139,6 +139,7 @@ ul {
   visibility: visible;
   transition: 1s;
   background-color: #0c0c0c;
+  overflow-y: hidden;
 }
 
 .hide-preloader {
