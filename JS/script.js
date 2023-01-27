@@ -57,7 +57,7 @@ display.addEventListener("click", () => {
 
 rightProject.addEventListener("click", () => {
   projectIndex++;
-  if (projectIndex > 11) {
+  if (projectIndex > pr.length - 1) {
     projectIndex = 0;
   }
   showProject();
@@ -65,7 +65,7 @@ rightProject.addEventListener("click", () => {
 leftProject.addEventListener("click", () => {
   projectIndex--;
   if (projectIndex < 0) {
-    projectIndex = 11;
+    projectIndex = pr.length - 1;
   }
   showProject();
 });
