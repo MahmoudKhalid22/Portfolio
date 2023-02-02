@@ -13,21 +13,25 @@ const projects = document.querySelector(".projects .container");
 const contactP = document.querySelector(".contact p");
 const form = document.querySelector(".form");
 const smenu = document.querySelector(".nav-links-icon");
+const scroller = document.querySelector(".scroller");
+
+// submit form
 
 form.addEventListener("submit", () => {
-  alert(`Your messege has sent ! thank you 😁`);
+  alert(`Your messege has been sent ! thank you 😁`);
 });
 
+// menu item click
+
 menuIcon.addEventListener("click", () => {
-  // console.log(menuIcon.classList);
-  close.classList.add("closei");
-  menuIcon.classList.add("menui");
-  menuItem.classList.add("nav-links-icon");
+  close.classList.toggle("closei");
+  menuIcon.classList.toggle("menui");
+  menuItem.classList.toggle("nav-links-icon");
 });
 close.addEventListener("click", () => {
-  // console.log(menuIcon.classList);
-  close.classList.remove("closei");
-  menuIcon.classList.remove("menui");
+  //   // console.log(menuIcon.classList);
+  close.classList.toggle("closei");
+  menuIcon.classList.toggle("menui");
   menuItem.classList.remove("nav-links-icon");
 });
 
@@ -83,3 +87,17 @@ const preloader = document.querySelector(".preloader");
 window.addEventListener("load", () => {
   preloader.classList.add("hide-preloader");
 });
+
+//scroller
+
+window.addEventListener("scroll", progressScroll);
+
+function progressScroll() {
+  const { scrollTop, scrollHeight } = document.documentElement;
+
+  // console.log(document.documentElement);
+  const scrollPercentage = `${
+    (scrollTop / (scrollHeight - window.innerHeight)) * 100
+  }%`;
+  scroller.style.width = scrollPercentage;
+}

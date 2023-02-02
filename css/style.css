@@ -139,12 +139,21 @@ ul {
   visibility: visible;
   transition: 1s;
   background-color: #0c0c0c;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .hide-preloader {
   z-index: -999;
   visibility: hidden;
+}
+.scroller {
+  height: 3px;
+  width: 0;
+  background-color: var(--main-alt-color);
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 /* ////////////////////////// */
@@ -215,15 +224,6 @@ header .container .modeIcon i:not(:first-child) {
   transition: 0.3s;
   overflow: hidden;
 }
-
-.nav-links ul li {
-  list-style: none;
-}
-
-.nav-links {
-  display: flex;
-}
-
 .nav-links a {
   color: var(--main-color);
   text-decoration: none;
