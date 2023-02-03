@@ -21,7 +21,7 @@ export const pr = [
     name: "Template-2",
     langauage: "HTML,CSS",
     img: "./img/template-2.png",
-    demo: "https://mahmoudkhalid22.github.io/template-2/",
+    demo: "https://astonishing-cajeta-406964.netlify.app/#protofolio",
     github: "https://github.com/MahmoudKhalid22/template-2",
   },
   {
