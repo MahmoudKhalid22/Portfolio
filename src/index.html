@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalabel=no" />
-    
-    <!-- <link rel="icon" href="http://icon-sets.iconify.design/zondicons/portfolio/"> -->
-       <!-- add icon link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalabel=no" />       <!-- add icon link -->
        <link rel = "icon" href = 
        "img/portfolio.png" 
                type = "image/x-icon">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/all.min.css">
+               <!-- link css files -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="css/quiries.css">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="input.css">
+    <!-- script icons -->
     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
@@ -28,28 +26,36 @@
 </head>
 
 <body>
-    <div class="preloader">
+    <!-- <div class="preloader grid justify-center fixed top-0 left-0 items-center visible transition-all bg-[#0c0c0c] overflow-hidden z-20 h-full w-full">
         <img src="preloader.gif" alt="preloader">
-    </div>
+    </div> -->
     <header>
-        <nav class="nav-center container">
-            <div class="nav-header">
-                <a href="#" class="logo">Mahmoud Khalid</a>
-                <button class="nav-toggle">
+        <nav class="nav-center flex items-center justify-between py-3 fixed z-10 bg-[#f0f0f0] w-full transition-all text-[rgb(28, 23, 23)] shadow-md px-3">
+            <div>
+                <a href="#" class="text-[#3a6cf4] uppercase font-bold text-2xl">Mahmoud Khalid</a>
                 
-                <i class="fa-solid fa-bars menu menu-icon"></i>
-                <i class="fa-regular fa-rectangle-xmark close"></i>
-                
-          </button>
             </div>
-            <!-- links -->
-            <ul class="nav-links">
-                <li><a href="#about" alt="main-nav-link">About</a></li>
-                <li class="lis"><a href="#services" alt="main-nav-link">Services</a></li>
-                <li class="lis"><a href="#experience" alt="main-nav-link">Experience</a></li>
-                <li><a href="#projects" alt="main-nav-link">Projects</a></li>
-                <li><a href="#contact" alt="main-nav-link">Contact</a></li>
+            <!-- links for mobiles -->
+            <ul class="transition-all absolute top-full left-0 w-full  overflow-hidden text-start bg-[#f0f0f0] border border-none  px-3 py-0  h-0 nav-links block md:hidden z-50">
+                <li class="py-2 hover:px-3  cursor-pointer transition-all border-b-slate-200 "><a href="#about" alt="main-nav-link" class="text-[#3a6cf4] text-lg  transition-colors">About</a></li>
+                <li class="py-2 hover:px-3 cursor-pointer  transition-all border-b-slate-200 "><a href="#services" alt="main-nav-link" class="text-[#3a6cf4] text-lg  transition-colors hover:text-[#601cfc]">Services</a></li>
+                <li class="py-2 hover:px-3 cursor-pointer  transition-all border-b-slate-200 "><a href="#experience" alt="main-nav-link" class="text-[#3a6cf4] text-lg  transition-colors hover:text-[#601cfc]">Experience</a></li>
+                <li  class="py-2 hover:px-3 cursor-pointer  transition-all border-b-slate-200 "><a href="#projects" alt="main-nav-link" class="text-[#3a6cf4] text-lg  transition-colors hover:text-[#601cfc]">Projects</a></li>
+                <li class="py-2 hover:px-3  cursor-pointer transition-all border-b-slate-200 "><a href="#contact" alt="main-nav-link" class="text-[#3a6cf4] text-lg  transition-colors hover:text-[#601cfc]">Contact</a></li>
             </ul>
+            <!-- links for screens -->
+            <ul class=" h-auto  transition-all overflow-hidden gap-3 hidden md:flex">
+                <li><a href="#about" alt="main-nav-link" class="text-[#3a6cf4] text-lg  transition-colors">About</a></li>
+                <li class="lis"><a href="#services" alt="main-nav-link" class="text-[#3a6cf4] text-lg  transition-colors hover:text-[#601cfc]">Services</a></li>
+                <li class="lis"><a href="#experience" alt="main-nav-link" class="text-[#3a6cf4] text-lg  transition-colors hover:text-[#601cfc]">Experience</a></li>
+                <li><a href="#projects" alt="main-nav-link" class="text-[#3a6cf4] text-lg  transition-colors hover:text-[#601cfc]">Projects</a></li>
+                <li><a href="#contact" alt="main-nav-link" class="text-[#3a6cf4] text-lg  transition-colors hover:text-[#601cfc]">Contact</a></li>
+            </ul>
+            <button class='menu text-[#3a6cf4] block md:hidden transition-colors hover:text-[#601cfc] border-none outline-none cursor-pointer'>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 fill-[#3a6cf4]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+            </button>
         </nav>
     </header>
     <section class="main">
@@ -522,10 +528,15 @@
             </div>
         </div>
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script type="module" src="JS/script.js"></script>
-    <script type="module" src="JS/appData.js"></script>
-    
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+<!--     
+    <script type="module" src="/JS/appData.js"></script>
+     -->
+
+
+     <script src="../JS/script.js">
+        
+     </script>
 </body>
 
 </html>

@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+.hide-preloader {
+  z-index: -999;
+  visibility: hidden;
+}
+.visible {
+  height: 15rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #3a6cf4;
+}
