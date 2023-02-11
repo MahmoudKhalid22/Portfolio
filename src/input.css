@@ -14,3 +14,12 @@
   padding-top: 0.5rem;
   border-top: 1px solid #3a6cf4;
 }
+
+.btn {
+  transition: 0.7s ease;
+  background-color: #3a6cf4;
+}
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #601cfc;
+}
