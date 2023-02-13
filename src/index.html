@@ -30,7 +30,7 @@
         <img src="preloader.gif" alt="preloader">
     </div> -->
     <header>
-        <nav class="nav-center flex items-center justify-between py-3 fixed z-10 bg-[#f0f0f0] w-full transition-all text-[rgb(28, 23, 23)] shadow-md px-3">
+        <nav class="nav-center flex items-center justify-between py-5 fixed z-10 bg-[#f0f0f0] w-full transition-all text-[rgb(28, 23, 23)] shadow-md px-3">
             <div>
                 <a href="#" class="text-[#3a6cf4] uppercase font-bold text-lg sm:text-2xl">Mahmoud Khalid</a>
                 
@@ -58,8 +58,8 @@
             </button>
         </nav>
     </header>
-    <section class="main pb-24 ">
-        <div class="bg-[#000016] w-full h-screen min-h-full px-3 relative">
+    <section class="pb-24 ">
+        <div class="bg-[#000016] w-full h-screen min-h-full px-5 relative">
             <div class="pt-40">
                 <h2 class="text-white text-xl ">Hello, I'm Mahmoud<br><span class="text-xl whitespace-nowrap sm:text-4xl font-semibold mt-3 text-[#4e9eff]">Frontend Developer</span></h2>
                 <h3 class="text-sm sm:text-2xl text-white font-semibold whitespace-nowrap letter-spacing-2 mt-3 mb-8">I build life changing Websites</h3>
@@ -80,99 +80,80 @@
             </div>
         </div>
     </section>
-    <section class="about" id="about">
-        <h2 class="title">About</h2>
-        <div class="container">
-            <div class="holder">
-                <p>Hello , I'm Mahmoud Khalid , a student at faculty of Engineering
+    <section class="about pb-16 px-5" id="about">
+        <h2 class="title mb-12">About</h2>
+        <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
+            <div class="w-2/3 flex-2 lg:mr-[1.5rem]
+            text-center lg:text-start">
+                <p class="text-2xl">Hello , I'm Mahmoud Khalid , a student at faculty of Engineering
                      (Computer Science Engineering Department) Zagazig university,
                       I chose track web development to deep into. so I entered an internship called
                      <q>Kalbonian Elmarsos</q> to study this track and passed it successfully
                       and now I can build frontend website for any purpose so if
                        you have an idea and want to achieve it please
-                    <a href="#contact">tell me</a>
+                    <a href="#contact" class="p-2 text-blue-800">tell me</a>
                 </p>
             </div>
-            <div class="image-holder">
-                <img src="myphoto.jpg" alt="my photo">
+            <div class="flex shadow-md w-96 lg:w-1/3 justify-center flex-1 lg:justify-end max-h-96">
+                <img src="../img/photo_2022-06-12_23-14-54.jpg" class="rounded" alt="my photo">
             </div>
         </div>
     </section>
-    <section class="services" id="services">
+    <section class="py-12 px-5 relative bg-[#f0f0f0]" id="services">
         <h2 class="title">Services</h2>
-        <div class="container">
-        <h2>  we can build frontend websites that we can convert figma design or any other design into code</h2>
-        <h3>our design comes with ...</h3>
+        <div>
+        <h2 class="mb-8 text-xl capitalize relative">  we can build frontend websites that we can convert figma design or any other design into code</h2>
+        <h3 class="mb-5 uppercase relative">our design comes with ...</h3>
         <ul>
-            <li><i class="fa-solid fa-desktop"></i> responsive design</li>
-            <li><i class="fa-solid fa-desktop"></i> modern and clean design</li>
-            <li><i class="fa-solid fa-desktop"></i> clean code</li>
-            <li><i class="fa-solid fa-desktop"></i> browser friendly</li>
+            <li class="text-lg flex gap-4 items-center capitalize mb-5"><i class="fa-solid fa-desktop"></i> responsive design</li>
+            <li class="text-lg flex gap-4 items-center capitalize mb-5"><i class="fa-solid fa-desktop"></i> modern and clean design</li>
+            <li class="text-lg flex gap-4 items-center capitalize mb-5"><i class="fa-solid fa-desktop"></i> clean code</li>
+            <li class="text-lg flex gap-4 items-center capitalize"><i class="fa-solid fa-desktop"></i> browser friendly</li>
         </ul>
         </div>
     </section>
-    <section class="experience" id="experience">
-        <h2 class="title">Experience</h2>
+    <section class="experience py-14 px-5" id="experience">
+        <h2 class="title">Skills</h2>
+        <!-- Container Languages -->
+        <div class="flex gap-4 justify-center flex-wrap">
+            <!-- item  01 -->
+            <div class="shadow-lg py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
+                <iconify-icon icon="vscode-icons:file-type-html" class="text-7xl"></iconify-icon>
 
-        <div class="container">
+                <span class="text-center block text-blue-700">HTML</span>
+            </div> 
+            <!-- item 02 -->
+            <div class="shadow-lg py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
+                <iconify-icon icon="vscode-icons:file-type-css" class="text-7xl"></iconify-icon>
 
-            <div class="languages-holder">
-                <h2>programming languages</h2>
-                <div class="languages">
-            <div class="c"><iconify-icon icon="logos:c-plusplus" class="c-lan"></iconify-icon>
-<p>
-                C++</p></div>
-            <div class="java"><i class="fa-brands fa-java"></i> <p>java</p></div>
-            <div class="html"><i class="fa-brands fa-html5"></i><p>html</p>
-                <a href="certificates/html-css.jpg" target="_blank" class="cer">view certificate</a>
+                <span class="text-center block text-blue-700">CSS</span>
             </div>
-            <div class="css"><i class="fa-brands fa-css3-alt"></i><p>css</p>
-                <a href="certificates/html-css.jpg" target="_blank" class="cer">view certificate</a></div>
-            <div class="js"><iconify-icon icon="vscode-icons:file-type-js-official"></iconify-icon>
-               <p> javaScript </p>
-                <a href="certificates/js.jpg" target="_blank" class="cer">view certificate</a>
+            <!-- item 03 -->
+            <div class="shadow-lg py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
+                <iconify-icon class='text-3xl' icon="logos:tailwindcss-icon"></iconify-icon>
+                <span class="text-center block text-blue-700">Tailwindcss</span>
+            </div>
+            <!-- item 04 -->
+            <div class="shadow-lg py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
+                <iconify-icon icon="vscode-icons:file-type-js-official" class="text-7xl mt-6"></iconify-icon>
+                <span class="text-center block text-blue-700">Javascript</span>
+            </div>
+             <!-- item 05 -->
+            <div class="shadow-lg py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
+                <iconify-icon icon="vscode-icons:file-type-reactjs" class='text-7xl mt-6'></iconify-icon>
+
+                <span class="text-center block text-blue-700">Reactjs</span>
+            </div>
+        </div>
+    
                
-            </div>
-        </div>
-            </div>
-            <div class="skills-holder">
-                <h2>Skills</h2>
-           
-            <div class="skills">
-                <div class="prSolving">
-                    <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon> <p>
-                    Problem Solving </p>
-                    <span>42</span>
-                    <a href="https://codeforces.com/profile/mahmoud0122549" target="_blank" class="handle">View handle on codeforces</a>
-                </div>
-                <div class="ds"> <p>Data Structure and Algorithms</p>
-                    <a href="certificates/Algorithms.png" target="_blank" class="handle">View certificate 1</a>
-                    <a href="certificates/data structure.png" target="_blank" class="handle">View certificate 2</a></div>
-                <div class="git"><iconify-icon icon="mdi:git"></iconify-icon>
-                    <p>Git and Github</p>
-                    <a href="certificates/github.png" target="_blank" class="handle">View certificate</a></div>
-                <div class="oop"><p>Object Oriented Programming</p>
-                    <a href="certificates/oop.png" target="_blank" class="handle">View certificate</a></div>
-            </div>
-        </div>
-        <div class="tools-holder">
-            <h2>Tools</h2>
-       
-            <div class="tools">
-                <div class="vsCode"><iconify-icon icon="vscode-icons:file-type-vscode"></iconify-icon>
-
-                    Visual Studio Code</div>
-                <div class="commandline">Command Line</div>
-               
-            </div>
-        </div>
-    </div>
     </section>
-    <section class="projects" id="projects">
+    <section class="projects bg-[#f0f0f0] py-12 px-10" id="projects">
         <h2 class="title">Projects</h2>
-        <iconify-icon title="display in menu icon" icon="gg:menu-grid-r" class="display" id="display"></iconify-icon>
-
-        <div class="projectMenu">
+        <div>
+        <iconify-icon title="display in menu icon" icon="gg:menu-grid-r" class="text-5xl  flex justify-center mb-4 text-center text-blue-700 hover:text-blue-500 transition-colors mx-auto cursor-pointer" id="display"></iconify-icon>
+    </div>
+        <div class="projectMenu hidden">
             <div class="project-card">
                 <div class="project-image">
                     <img class="pr-img" alt="photo of project">
@@ -198,186 +179,98 @@
         </div>
 
 
-        <div class="container">
-            <!-- 00 -->
+        <div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
 
-            <!-- 01 -->
-            <div class="project-card">
+            <!-- 01 Landing page -->
+            <div class="bg-slate-400 cursor-pointer border-white border h-[17rem] shadow-2xl w-80 overflow-hidden rounded-lg hover:scale-110 transition-transform">
                 <div class="project-image">
-                    <img src="img/landing.jpg" class="pr-img" alt="photo of project">
+                    <img src="./img/landing.jpg" class="pr-img" alt="photo of project">
                 </div>
-                <div class="project-info">
-                    <p class="project-category">Trial Protofolio</p>
+                <div class="flex px-5 mt-7 items-center mx-auto justify-between text-center text-white">
+                    <p class="project-category">Landing Page</p>
                     <strong class="project-title">
-              <span>Html,css</span>
               <a class="more-details-demo" href="https://tempone-mahmoud.netlify.app/" target="_blank">Live Demo</a>
-              <a class="more-details" href="https://github.com/MahmoudKhalid22/temp" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a class="ml-7" href="https://github.com/MahmoudKhalid22/temp" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            </strong>
+                </div>
+            </div>     
+            <!-- 02 Landing page -->
+            <div class="bg-slate-400 cursor-pointer border-white border h-[17rem] shadow-2xl w-80 overflow-hidden rounded-lg hover:scale-110 transition-transform">
+                <div class="project-image">
+                    <img src="./img/template-2.png" class="" alt="photo of project">
+                </div>
+                <div class="flex px-5 mt-7 items-center mx-auto justify-between text-center text-white">
+                    <p class="project-category">Landing Page 2</p>
+                    <strong class="project-title">
+              <a class="more-details-demo" href="https://landing-page-mkhalid.netlify.app/" target="_blank">Live Demo</a>
+              <a class="ml-7" href="https://github.com/MahmoudKhalid22/template-2" target="_blank"><i class="fa-brands fa-github"></i></a>
 
             </strong>
                 </div>
             </div>
-            <!-- 02 -->
-            <div class="project-card">
+            <!-- 03 Gaming Website -->
+            <div class="bg-slate-400 cursor-pointer border-white border h-[17rem] shadow-2xl w-80 overflow-hidden rounded-lg hover:scale-110 transition-transform">
                 <div class="project-image">
-                    <img src="img/photo_2022-06-11_16-01-22.jpg" alt="photo of project">
+                    <img src="./img/template-3.png" class="pr-img" alt="photo of project">
                 </div>
-                <div class="project-info">
-                    <p class="project-category">Omnifood</p>
+                <div class="flex px-5 mt-7 items-center mx-auto justify-between text-center text-white">
+                    <p class="project-category">Gaming Website</p>
                     <strong class="project-title">
-              <span>Html,css</span>
-              <a class="more-details" href="https://omnifood-mahmoudkhalid.netlify.app/" target="_blank">Live Demo</a>
-              <a class="more-details" href="https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/tree/main/02-Udemy/-01-HTML-CSS-Jonas/Projects/Omnifood/omnifood" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </strong>
-                </div>
-            </div>
-            <!-- 03 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/template-2.png" alt="photo of project">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Template-2</p>
-                    <strong class="project-title">
-              <span>Html,css</span>
-              <a class="more-details" href="https://mahmoudkhalid22.github.io/template-2/" target="_blank">Live Demo</a>
-              <a class="more-details" href="https://github.com/MahmoudKhalid22/template-2" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </strong>
-                </div>
-            </div>
-            <!-- 04 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/template-3.png" alt="photo of project">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Template-3-Real-World-Project</p>
-                    <strong class="project-title">
-              <span>Html,css</span>
-              <a class="more-details" href="https://mahmoudkhalid22.github.io/template-3/" target="_blank">Live Demo</a>
-              <a class="more-details" href="https://github.com/MahmoudKhalid22/template-3" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </strong>
-                </div>
-            </div>
-            <!-- 05 js -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/pig-game.png" alt="photo of project">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Pig-Game</p>
-                    <strong class="project-title">
-              <span>html,css,js</span>
-              <a class="more-details" href="https://pig-game-msamra.netlify.app/" target="_blank">Live Demo</a>
-              <a class="more-details" href="https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Pig-Game" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a class="more-details-demo" href="https://mahmoudkhalid22.github.io/template-3/" target="_blank">Live Demo</a>
+              <a class="ml-7" href="https://github.com/MahmoudKhalid22/template-3" target="_blank"><i class="fa-brands fa-github"></i></a>
 
             </strong>
                 </div>
             </div>
-            <!-- 06 js -->
-            <div class="project-card">
+            <!-- 04 Bankist page -->
+            <div class="bg-slate-400 cursor-pointer border-white border h-[17rem] shadow-2xl w-80 overflow-hidden rounded-lg hover:scale-110 transition-transform">
                 <div class="project-image">
-                    <img src="img/bankist.png" alt="photo of project">
+                    <img src="./img/bankist-site.png" class="pr-img" alt="photo of project">
                 </div>
-                <div class="project-info">
-                    <p class="project-category">Bankist</p>
+                <div class="flex px-5 mt-7 items-center mx-auto justify-between text-center text-white">
+                    <p class="project-category">Bankist site</p>
                     <strong class="project-title">
-              <span>html,css,js</span>
-              <a class="more-details" href="https://bankist-msamra.netlify.app/" target="_blank">Live Demo</a>
-              <a class="more-details" href="https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Bankist" target="_blank"><i class="fa-brands fa-github"></i></a>            
-            </strong>
-                </div>
-            </div>
-            <!-- 07 js -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/bankist-site.png" alt="photo of project">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Bankist-site</p>
-                    <strong class="project-title">
-              <span>html,css,js</span>
-              <a class="more-details" href="https://bankist-site-msamra.netlify.app/" target="_blank">Live Demo</a>
-              <a class="more-details" href="https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Bankist-Site" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </strong>
-                </div>
-            </div>
-            <!-- 07 js -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/mapty.png" alt="photo of project">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Mapty</p>
-                    <strong class="project-title">
-              <span>html,css,js</span>
-              <a class="more-details" href="https://mapty-msamra.netlify.app/" target="_blank">Live Demo</a>
-              <a class="more-details" href="https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Mapty" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </strong>
-                </div>
-            </div>
-            <!-- 08 js -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/forkify.png" alt="photo of project">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Forkify</p>
-                    <strong class="project-title">
-              <span>html,css,js</span>
-              <a class="more-details" href="https://msamra-forkify.netlify.app/" target="_blank">Live Demo</a>
-              <a class="more-details" href="https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Forkify" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </strong>
-                </div>
-            </div>
-            <!-- 09 -->
-            <!-- React 1 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/social.png" alt="photo of project">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Social app</p>
-                    <strong class="project-title">
-              <span>Reactjs</span>
-              <a class="more-details" href="https://social-app-mkhalid.netlify.app/" target="_blank">Live Demo</a>
-              <a class="more-details" href="https://github.com/MahmoudKhalid22/social-project" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </strong>
-                </div>
-            </div>
-            <!-- 11 react 2 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/auth-app.png" alt="photo of project">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Auth app</p>
-                    <strong class="project-title">
-              <span>Reactjs</span>
-              <a class="more-details" href="https://auth-app-mkhalid.netlify.app/" target="_blank">Live Demo</a>
-              <a class="more-details" href="https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/blob/main/02-Udemy/-03-Reactjs-Maximilian/Projects/Authentication-page" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </strong>
-                </div>
-            </div>
+              <a class="more-details-demo" href="https://bankist-site-msamra.netlify.app/" target="_blank">Live Demo</a>
+              <a class="ml-7" href="https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Bankist-Site" target="_blank"><i class="fa-brands fa-github"></i></a>
 
-        
-            <!-- 13  sst-->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/sst.png" alt="photo of project">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Notes app</p>
-                    <strong class="project-title">
-              <span>fullstack app</span>
-              <a class="more-details" href="https://d4pmee63mwasw.cloudfront.net/" target="_blank">Live Demo</a>
-              <a class="more-details" href="https://github.com/MahmoudKhalid22/notes" target="_blank"><i class="fa-brands fa-github"></i></a>
             </strong>
                 </div>
             </div>
+            <!-- 05 Social -->
+            <div class="bg-slate-400 cursor-pointer border-white border h-[17rem] shadow-2xl w-80 overflow-hidden rounded-lg hover:scale-110 transition-transform">
+                <div class="project-image">
+                    <img src="./img/social.png" class="pr-img" alt="photo of project">
+                </div>
+                <div class="flex px-5 mt-7 items-center mx-auto justify-between text-center text-white">
+                    <p class="project-category">Social Project</p>
+                    <strong class="project-title">
+              <a class="more-details-demo" href="https://social-app-mkhalid.netlify.app/" target="_blank">Live Demo</a>
+              <a class="ml-7" href="https://github.com/MahmoudKhalid22/social-project" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            </strong>
+                </div>
+            </div>
+            <!-- 06 Ecommerce -->
+            <div class="bg-slate-400 cursor-pointer border-white border h-[17rem] shadow-2xl w-80 overflow-hidden rounded-lg hover:scale-110 transition-transform">
+                <div class="project-image">
+                    <img src="./img/ecommerce.png" class="pr-img" alt="photo of project">
+                </div>
+                <div class="flex px-5 mt-7 items-center mx-auto justify-between text-center text-white">
+                    <p class="project-category">E-commerce</p>
+                    <strong class="project-title">
+              <a class="more-details-demo" href="https://ecommerce-mkhalid.netlify.app/" target="_blank">Live Demo</a>
+              <a class="ml-7" href="https://github.com/MahmoudKhalid22/Ecommerce-tailwindcss" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            </strong>
+                </div>
+            </div>       
+            
+            
         </div>
 
     </section>
-    <section class="contact" id="contact">
+    <section class="py-12 contact" id="contact">
         <h2 class="title">Contact me</h2>
         <p class="caption">Feel free to send me</p>
         <div class="container">
@@ -389,7 +282,7 @@
                     </div>
                     <div>
                         <p>Phone :</p>
-                        <p>+201225491003</p>
+                        <p>+201229086941</p>
                     </div>
                     <div>
                         <p>address :</p>
@@ -548,3 +441,89 @@
 </html>
 
 <!-- sheetname -->
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+           
