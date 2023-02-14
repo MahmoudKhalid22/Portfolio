@@ -1,35 +1,43 @@
 // // import { pr } from "./appData.js";
 
+const preloader = document.querySelector(".preloader");
+const progress = document.querySelector(".progress");
+const menuIcon = document.querySelector(".menu");
+const menuItem = document.querySelector(".nav-links");
+
 // // const card = document.querySelectorAll(".card");
 // // const p = document.querySelectorAll(".info > p");
 // // const header = document.querySelector("header .container");
 // // const cssIcon = document.querySelector(".fa-css3-alt");
 // // const project = document.querySelector(".projects");
-const menuIcon = document.querySelector(".menu");
-// // const close = document.querySelector(".close");
-const menuItem = document.querySelector(".nav-links");
 // // const display = document.getElementById("display");
 // // const projects = document.querySelector(".projects .container");
 // // const contactP = document.querySelector(".contact p");
-// // const form = document.querySelector(".form");
+const form = document.querySelector(".form");
 // // const smenu = document.querySelector(".nav-links-icon");
 
-// // form.addEventListener("submit", () => {
-// //   alert(`Your messege has sent ! thank you 😁`);
-// // });
-
-menuIcon.addEventListener("click", () => {
-  //   // console.log(menuIcon.classList);
-  //   // close.classList.add("closei");
-  //   // menuIcon.classList.add("menui");
-  menuItem.classList.toggle("visible");
+// preloader
+window.addEventListener("load", () => {
+  preloader.classList.add("hide-preloader");
 });
-// // close.addEventListener("click", () => {
-// //   // console.log(menuIcon.classList);
-// //   close.classList.remove("closei");
-// //   menuIcon.classList.remove("menui");
-// //   menuItem.classList.remove("nav-links-icon");
-// // });
+// progress
+function scroller() {
+  const { scrollTop, scrollHeight } = document.documentElement;
+  const scrollPercentage = `${
+    (scrollTop / (scrollHeight - window.innerHeight)) * 100
+  }%`;
+  progress.style.width = scrollPercentage;
+}
+window.addEventListener("scroll", scroller);
+
+//navbar
+menuIcon.addEventListener("click", () => {
+  menuItem.classList.toggle("vi");
+});
+// form submit
+form.addEventListener("submit", () => {
+  alert(`Your messege has been sent ! thank you 😁`);
+});
 
 // // // const projectCard = document.querySelector(".project-card");
 // // const projectImage = document.querySelector(".pr-img");
@@ -77,9 +85,3 @@ menuIcon.addEventListener("click", () => {
 // //   projectDemo.href = pr[projectIndex].demo;
 // //   projectGitHub.href = pr[projectIndex].github;
 // // };
-
-// // const preloader = document.querySelector(".preloader");
-
-// // window.addEventListener("load", () => {
-// //   preloader.classList.add("hide-preloader");
-// // });

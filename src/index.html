@@ -8,8 +8,9 @@
        "img/portfolio.png" 
                type = "image/x-icon">
                <!-- link css files -->
-    <link rel="stylesheet" href="all.min.css">
-    <link rel="stylesheet" href="build.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- <link rel="stylesheet" href="build.css"> -->
     <link rel="stylesheet" href="input.css">
     <!-- script icons -->
     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -24,9 +25,10 @@
 </head>
 
 <body>
-    <!-- <div class="preloader grid justify-center fixed top-0 left-0 items-center visible transition-all bg-[#0c0c0c] overflow-hidden z-20 h-full w-full">
-        <img src="preloader.gif" alt="preloader">
-    </div> -->
+    <div class="preloader grid justify-center fixed h-full w-full top-0 left-0 items-center visible transition-all bg-[#0c0c0c] overflow-hidden z-50">
+        <img src="img/preloader.gif" alt="preloader">
+    </div>
+    <div class="progress fixed top-0 left-0 bg-blue-600 h-1 w-1 z-40"></div>
     <header>
         <nav class="nav-center flex items-center justify-between py-5 fixed z-10 bg-[#f0f0f0] w-full transition-all text-[rgb(28, 23, 23)] shadow-md px-3">
             <div>
@@ -272,7 +274,7 @@
         <h2 class="titleContact mb-3 mx-auto">Contact me</h2>
         <p class="text-center mb-[17rem]  lg:mb-20 text-[#08085a]">Feel free to send me</p>
         <div>
-            <form class="bg-[#601cfc] border-none outline-none py-7 pr-4 pl-4 lg:pl-36 mx-auto w-[20rem] lg:w-[26rem] relative rounded-lg h-[28rem] form gform pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycby5AL0b2tebU3n9p-A1oYuZgxubM9DlLyMkL8oHQf-5Kjw2bvXMcoR82YEXeV-2nyeX/exec" method="POST" data-email="mahmoud0122549@gmail.com">
+            <form class="form bg-[#601cfc] border-none outline-none py-7 pr-4 pl-4 lg:pl-36 mx-auto w-[20rem] lg:w-[26rem] relative rounded-lg h-[28rem] form gform pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycby5AL0b2tebU3n9p-A1oYuZgxubM9DlLyMkL8oHQf-5Kjw2bvXMcoR82YEXeV-2nyeX/exec" method="POST" data-email="mahmoud0122549@gmail.com">
                 <div class="absolute  bg-[#3a6cf4] md:shadow-lg rounded left-0 -top-[12.0625rem] translate-x-0 translate-y-0 lg:-left-[4rem] lg:top-1/2 py-4 px-6 text-[#f0f0f0] lg:-translate-x-1/2 lg:-translate-y-1/2 text-sm w-[20rem] h-[12rem] flex justify-center flex-col">
                     <div class="flex gap-3 items-center mb-3">
                         <p  class="text-start text-md font-semibold whitespace-nowrap">email:</p>
