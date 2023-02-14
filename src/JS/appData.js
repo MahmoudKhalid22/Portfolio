@@ -21,7 +21,7 @@ export const pr = [
     name: "Template-2",
     langauage: "HTML,CSS",
     img: "./img/template-2.png",
-    demo: "https://mahmoudkhalid22.github.io/template-2/",
+    demo: "https://astonishing-cajeta-406964.netlify.app/#protofolio",
     github: "https://github.com/MahmoudKhalid22/template-2",
   },
   {
@@ -32,26 +32,9 @@ export const pr = [
     demo: "https://mahmoudkhalid22.github.io/template-3/",
     github: "https://github.com/MahmoudKhalid22/template-3",
   },
+
   {
     id: 5,
-    name: "Pig Game",
-    langauage: "HTML,CSS,JS",
-    img: "./img/pig-game.png",
-    demo: "https://pig-game-msamra.netlify.app/",
-    github:
-      "https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Pig-Game",
-  },
-  {
-    id: 6,
-    name: "Bankist-app",
-    langauage: "HTML,CSS,JS",
-    img: "./img/bankist.png",
-    demo: "https://bankist-msamra.netlify.app/",
-    github:
-      "https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Bankist",
-  },
-  {
-    id: 7,
     name: "Bankist site",
     langauage: "HTML,CSS,JS",
     img: "./img/bankist-site.png",
@@ -60,7 +43,7 @@ export const pr = [
       "https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Bankist-Site",
   },
   {
-    id: 8,
+    id: 6,
     name: "Mapty",
     langauage: "HTML,CSS,JS",
     img: "./img/mapty.png",
@@ -69,16 +52,7 @@ export const pr = [
       "https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Mapty",
   },
   {
-    id: 9,
-    name: "Forkify",
-    langauage: "HTML,CSS,JS",
-    img: "./img/forkify.png",
-    demo: "https://msamra-forkify.netlify.app/",
-    github:
-      "https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Forkify",
-  },
-  {
-    id: 10,
+    id: 7,
     name: "Social",
     langauage: "ReactJS",
     img: "./img/social.png",
@@ -86,16 +60,7 @@ export const pr = [
     github: "https://github.com/MahmoudKhalid22/temp",
   },
   {
-    id: 11,
-    name: "Auth-app",
-    langauage: "ReactJS",
-    img: "./img/auth-app.png",
-    demo: "https://auth-app-mkhalid.netlify.app/",
-    github:
-      "https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/blob/main/02-Udemy/-03-Reactjs-Maximilian/Projects/Authentication-page",
-  },
-  {
-    id: 12,
+    id: 8,
     name: "Notes app",
     langauage: "SST",
     img: "./img/sst.png",
