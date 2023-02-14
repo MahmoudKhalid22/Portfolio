@@ -89,10 +89,35 @@ form textarea {
 }
 
 .project-items {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
-  gap: 2rem; */
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  gap: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
+.info {
+  top: 0;
+  position: absolute;
+  left: 0;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 2;
+  background-color: #21213563;
+  z-index: 100;
+  /* height: 100%; */
+  width: 100%;
+  margin: 0;
+  padding: 2rem;
+  height: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.pr:hover .info {
+  visibility: visible;
+  height: 100%;
+  /* width: 100%; */
+}
+/* .pr .info p {
+  transition-delay: 0.3s;
+} */
