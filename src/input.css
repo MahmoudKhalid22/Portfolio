@@ -15,6 +15,66 @@
   border-top: 1px solid #3a6cf4;
 }
 
+.title {
+  position: relative;
+  border: 2px solid var(--main-color);
+  width: fit-content;
+  padding: 0.5rem;
+  color: var(--main-color);
+  margin: 0 auto 4.875rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  transition: 0.6s;
+  border-radius: 10rem;
+  overflow: hidden;
+}
+.titleContact {
+  position: relative;
+  border: 2px solid var(--main-color);
+  width: fit-content;
+  padding: 0.5rem;
+  color: var(--main-color);
+  /* margin: 0 auto 4.875rem; */
+  font-size: 1.5rem;
+  font-weight: 800;
+  transition: 0.6s;
+  border-radius: 10rem;
+  overflow: hidden;
+}
+.title::before,
+.titleContact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  /* padding: 0.5rem; */
+  /* border-radius: 10rem; */
+  width: 0;
+  height: 200%;
+  /* border-radius: 50%; */
+  background-color: var(--main-color);
+  transition: 0.7s ease;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  z-index: -1;
+}
+
+.title:hover,
+.titleContact:hover {
+  color: white;
+  border: 2px solid white;
+  transition-delay: 0.3s;
+  z-index: 101;
+}
+
+.title:hover::before,
+.titleContact:hover::before {
+  /* animation: left 0.6s linear forwards; */
+  width: 100%;
+  z-index: -1;
+}
+
 .btn {
   transition: 0.7s ease;
   background-color: #3a6cf4;
@@ -22,4 +82,17 @@
 .btn:hover {
   transform: scale(1.1);
   background-color: #601cfc;
+}
+form textarea {
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.project-items {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 2rem; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 80px;
 }
