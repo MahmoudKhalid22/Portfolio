@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --main-color:#3a6cf4;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -28,6 +32,7 @@
   transition: 0.6s;
   border-radius: 10rem;
   overflow: hidden;
+  z-index: 2;
 }
 .titleContact {
   position: relative;
@@ -41,6 +46,7 @@
   transition: 0.6s;
   border-radius: 10rem;
   overflow: hidden;
+  z-index: 2;
 }
 .title::before,
 .titleContact::before {
@@ -122,3 +128,74 @@ form textarea {
 /* .pr .info p {
   transition-delay: 0.3s;
 } */
+
+
+/* ANIMATIONS */
+.leftAbout
+{
+    /* position: relative; */
+    /* left: 80rem; */
+    transform: translateX(-150%);
+    filter: blur(10px);
+    transition: 1.5s ease;
+    
+  }
+  .rightAbout{
+    transform: translateX(200%);
+    filter: blur(10px);
+    transition: 1.5s ease;
+  }
+.scrollLeftAbout,
+.scrollRightAbout{
+  transform: translateX(0);
+  filter: blur(0);
+}
+.contactInfo{
+  transform: translateX(-500%);
+  /* top:−12.0625rem; */
+  transition: 1.5s ease;
+}
+/* .contactUser{
+  transform:translateX(300%);
+  transition: 1.5s ease;
+} */
+
+.removeContactInfo{
+  transform: translate(0,0);
+  
+}
+/* .removeContactUser{
+  transform: translateX(0);
+} */
+@media(min-width:1024px){
+
+.removeContactInfo{
+  /* transform: translateX(-50%); */
+  /* transform: translateY(-50%); */
+  transform: translate(-50%,-50%);
+}
+.removeContactUser{
+  transform: translateX(0);
+}
+
+}
+
+.serviceTitle,.with{
+  filter: blur(10px);
+  transform: translateX(-100rem);
+  transition: 1.5s ease;
+}
+.removeServiceTitle,
+.removeWith{
+  filter: blur(0);
+  transform: translateX(0);
+}
+.responsive,.modern,.clean,.browser{
+  filter: blur(10px);
+  transform: translateX(150%);
+  transition: 1.5s ease;
+}
+.removeResponsive,.removeModern,.removeClean,.removeBrowser{
+  filter: blur(0);
+  transform: translateX(0);
+}
