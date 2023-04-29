@@ -67,7 +67,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss build -o ./dist/output.css --watch"
+    "dev": "npx tailwindcss build -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -o build.css --minify"
   },
   "repository": {
     "type": "git",
