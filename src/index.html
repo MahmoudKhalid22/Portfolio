@@ -30,9 +30,9 @@
 </head>
 
 <body>
-    <div class="preloader grid justify-center fixed h-full w-full top-0 left-0 items-center visible transition-all bg-[#0c0c0c] overflow-hidden z-50">
+    <!-- <div class="preloader grid justify-center fixed h-full w-full top-0 left-0 items-center visible transition-all bg-[#0c0c0c] overflow-hidden z-50">
         <img src="img/preloader.gif" alt="preloader">
-    </div>
+    </div> -->
     <div class="progress fixed top-0 left-0 bg-blue-600 h-1 w-1 z-40"></div>
     <header>
         <nav class="nav-center  h-12 flex items-center justify-between py-4 px-4 md:py-8 fixed z-10 bg-[#f0f0f0] w-full transition-all text-[rgb(28, 23, 23)] shadow-md md:px-8">
@@ -68,11 +68,11 @@
             </button>
         </nav>
     </header>
-    <section class="pb-24 ">
-        <div class="bg-[#000016] w-full h-screen min-h-full px-5 relative">
+    <section class="hero pb-24">
+        <div class=" w-full h-screen min-h-full px-5 relative">
             <div class="pt-40">
                 <h2 class="text-white text-xl ">Hello, I'm Mahmoud<br><span class="title-hero text-2xl whitespace-nowrap sm:text-4xl font-semibold text-[#4e9eff] my-5 block">Frontend Developer</span></h2>
-                <h3 class="text-sm sm:text-2xl text-white font-semibold whitespace-nowrap letter-spacing-2 mt-3 mb-8">I build life changing Websites</h3>
+                <h3 class="text-sm sm:text-2xl text-white font-semibold whitespace-nowrap letter-spacing-2 mt-3 mb-20">I build life changing Websites</h3>
                 <div class="mt-10 flex gap-4">
           <button class="btn" >      <a href="#projects" class="text-white bg-[#3a6cf4] hover:bg-[#601cfc] font-semibold  py-2 px-4 rounded ">My Work</a>
             </button>
@@ -95,13 +95,18 @@
         <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
             <div class="leftAbout lg:flex-2 lg:w-2/3 lg:mr-[1.5rem]
             text-center lg:text-start">
-                <p class="text-[#08085a] text-[1.602rem] information md:w-[40rem] ">Hello , I'm Mahmoud Khalid , a student at faculty of Engineering
-                     (Computer Science Engineering Department) Zagazig university,
-                      I chose track web development to deep into. so I entered an internship called
-                     <q>Kalbonian Elmarsos</q> to study this track and passed it successfully
-                      and now I can build frontend website for any purpose so if
-                       you have an idea and want to achieve it please
-                    <a href="#contact" class="p-2 text-blue-800">tell me</a>
+                <p class="information">
+                    <ul class="text-[1.602rem] list-disc text-left ml-8 md:w-[40rem] text-[#08085a]">
+                        <li> Hi, my name is Mahmoud Khalid and I am a passionate web designer and frontend developer with expertise in ReactJS.</li>
+                        <li> I am currently pursuing my degree in Computer and System Engineering at Zagazig University.</li>
+                        <li>Over the years, I have honed my skills in web design and frontend development, and I am constantly seeking out new challenges and opportunities to grow.</li>
+                        <li>So if you have any idea don't hesitate to<a href="#contact" class="p-2 text-blue-800">contact me</a></li>
+                    </ul>
+
+             
+                  
+
+                   
                 </p>
             </div>
             <div class="rightAbout flex shadow-md w-72 md:w-96 lg:w-1/3 justify-center flex-1 lg:justify-end max-h-96">
@@ -109,48 +114,49 @@
             </div>
         </div>
     </section>
-    <section class="py-12 px-5 relative bg-[#f0f0f0] overflow-hidden" id="services">
+    <section class="service py-12 px-5 relative bg-[#f0f0f0] overflow-hidden" id="services">
         <h2 class="title">Services</h2>
         <div>
-        <h2 class="serviceTitle  mb-8 text-xl capitalize relative text-[#08085a]">  we can build frontend websites that we can convert figma design or any other design into code</h2>
-        <h3 class="with mb-5 uppercase relative text-[#08085a]">our design comes with ...</h3>
+        <h2 class="serviceTitle  mb-8 text-xl capitalize relative text-[#f0f0f0]">  we can build frontend websites that we can convert figma design 
+            or any other design into code</h2>
+        <h3 class="with mb-5 uppercase relative text-[#f0f0f0]">our design comes with ...</h3>
         <ul>
-            <li class="responsive text-lg flex gap-4 items-center capitalize text-[#08085a] mb-5"><i class="fa-solid fa-desktop text-[#08085a]"></i> responsive design</li>
-            <li class="modern text-lg flex gap-4 items-center capitalize text-[#08085a] mb-5"><i class="fa-solid fa-desktop text-[#08085a]"></i> modern and clean design</li>
-            <li class="clean text-lg flex gap-4 items-center capitalize text-[#08085a] mb-5"><i class="fa-solid fa-desktop text-[#08085a]"></i> clean code</li>
-            <li class="browser text-lg flex gap-4 items-center capitalize text-[#08085a]"><i class="fa-solid fa-desktop text-[#08085a]"></i> browser friendly</li>
+            <li class="responsive text-lg flex gap-4 items-center capitalize text-[#f0f0f0] mb-5"><i class="fa-solid fa-desktop text-[#f0f0f0]"></i> responsive design</li>
+            <li class="modern text-lg flex gap-4 items-center capitalize text-[#f0f0f0] mb-5"><i class="fa-solid fa-desktop text-[#f0f0f0]"></i> modern and clean design</li>
+            <li class="clean text-lg flex gap-4 items-center capitalize text-[#f0f0f0] mb-5"><i class="fa-solid fa-desktop text-[#f0f0f0]"></i> clean code</li>
+            <li class="browser text-lg flex gap-4 items-center capitalize text-[#f0f0f0]"><i class="fa-solid fa-desktop text-[#f0f0f0]"></i> browser friendly</li>
         </ul>
         </div>
     </section>
     <section class="experience py-14 px-5" id="experience">
         <h2 class="title">Skills</h2>
         <!-- Container Languages -->
-        <div class="flex gap-4 justify-center flex-wrap">
+        <div class="flex gap-4 justify-center flex-wrap overflow-hidden">
             <!-- item  01 -->
-            <div class="shadow-lg py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
-                <iconify-icon icon="vscode-icons:file-type-html" class="text-7xl"></iconify-icon>
+            <div class="skills-holder skills-holder-1  py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
+                <iconify-icon icon="vscode-icons:file-type-html" class="border-4 border-[#3a6cf4] rounded-full p-4 text-7xl"></iconify-icon>
 
                 <span class="skills-l text-center block text-blue-700">HTML</span>
             </div> 
             <!-- item 02 -->
-            <div class="shadow-lg py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
-                <iconify-icon icon="vscode-icons:file-type-css" class="text-7xl"></iconify-icon>
+            <div class="skills-holder skills-holder-1  py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
+                <iconify-icon icon="vscode-icons:file-type-css" class="border-4 border-[#3a6cf4] rounded-full p-4 text-7xl"></iconify-icon>
 
                 <span class="skills-l text-center block text-blue-700">CSS</span>
             </div>
             <!-- item 03 -->
-            <div class="shadow-lg py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
-                <iconify-icon class='text-3xl' icon="logos:tailwindcss-icon"></iconify-icon>
+            <div class="skills-holder skills-holder-2  py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
+                <iconify-icon class='border-4 border-[#3a6cf4] rounded-full p-4 text-5xl w-28 h-28'  icon="logos:tailwindcss-icon"></iconify-icon>
                 <span class="skills-l text-center block text-blue-700">Tailwindcss</span>
             </div>
             <!-- item 04 -->
-            <div class="shadow-lg py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
-                <iconify-icon icon="vscode-icons:file-type-js-official" class="text-7xl mt-6"></iconify-icon>
+            <div class="skills-holder skills-holder-2  py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
+                <iconify-icon icon="vscode-icons:file-type-js-official" class="border-4 border-[#3a6cf4] rounded-full p-4 text-7xl mt-6"></iconify-icon>
                 <span class="skills-l text-center block text-blue-700">Javascript</span>
             </div>
              <!-- item 05 -->
-            <div class="shadow-lg py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
-                <iconify-icon icon="vscode-icons:file-type-reactjs" class='text-7xl mt-6'></iconify-icon>
+            <div class="skills-holder skills-holder-1  py-5 px-3 flex flex-col justify-center gap-4 hover:scale-110 transition-transform cursor-pointer items-center">
+                <iconify-icon icon="vscode-icons:file-type-reactjs" class='border-4 border-[#3a6cf4] rounded-full p-4 text-7xl mt-6'></iconify-icon>
 
                 <span class="skills-l text-center block text-blue-700">Reactjs</span>
             </div>

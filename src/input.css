@@ -27,6 +27,35 @@ body {
     padding: 2rem;
   }
 }
+.hero {
+  /* background-image: url(./img/bg/linus-mimietz-gvptKmonylk-unsplash.jpg); */
+  /* background-image: url(./img/bg/screen-post-rVcxGBT80j8-unsplash.jpg); */
+  background-image: url(./img/bg/1.jpg);
+
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+.service {
+  background-image: url(./img/bg/service.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    background-image: url(./img/bg/mobile.jpg);
+  }
+  .service {
+    background-image: url(./img//bg/service-mobile.jpg);
+  }
+}
+
+/* @media(min-width:944px){
+.serviceTitle{
+  width:47rem;
+}
+} */
 /* Typography */
 @media (min-width: 912px) {
   .logo {
@@ -38,14 +67,14 @@ body {
     font-weight: 700;
   }
 }
-.nav-link {
-  /* 1.802rem/28.83px - 1.602rem/25.63px - 1.424rem/22.78px  */
-  font-size: 1.424rem;
+/* .nav-link { */
+/* 1.802rem/28.83px - 1.602rem/25.63px - 1.424rem/22.78px  */
+/* font-size: 1.424rem;
   font-weight: 400;
-}
-.nav-link:hover {
+} */
+/* .nav-link:hover {
   color: var(--main-alt-color);
-}
+} */
 @media (max-width: 544px) {
   .information {
     font-size: 1rem;
@@ -282,4 +311,37 @@ form textarea {
 .removeBrowser {
   filter: blur(0);
   transform: translateX(0);
+}
+
+@keyframes Right {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes Left {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 100%;
+  }
+}
+.skills-holder {
+  position: relative;
+}
+@media (min-width: 701px) {
+  .skills-holder {
+    animation: Right 15s linear infinite forwards;
+  }
+}
+@media (max-width: 419px) {
+  .skills-holder-1 {
+    animation: Right 10s linear infinite forwards;
+  }
+  .skills-holder-2 {
+    animation: Left 10s linear infinite forwards;
+  }
 }
